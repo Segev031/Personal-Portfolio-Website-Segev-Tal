@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Segev Tal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/b62aa1f949.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ----------background music---------- -->
+    <audio src="files/music/background-music.mp3" autoplay="" loop=""></audio>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="files/images/logo.png" alt="Logo" class="logo">
+                <ul id="sideMenu">
+                    <li class="item"><a href="#header">Home</a></li>
+                    <li class="item"><a href="#about">About</a></li>
+                    <li class="item"><a href="#services">Services</a></li>
+                    <li class="item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="item"><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hey! I'm <span>Segev</span></h1>
+                <h2>and I'm <span class="auto-type"></span></h2>
+            </div>
+        </div>
+    </header>
+    <!-- ---------------about--------------- -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="files/images/user.png" alt="About Me"></img>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a master coach, best-selling author and a passionate speaker. I'm the founder of the first
+                        women-only hedge fund, special counsellor in many corporations across the globe. I've found
+                        balance
+                        between work and life, now I'm a totally happy person, loving mother, inspiring speaker
+                        and writer,
+                        and firm investor, but it didn't come easily. I've gone though hundreds of failures and
+                        complicated
+                        situations. You can use my previous experience in order not to fall into the same trap.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Android Development</span><br>Building Beautiful Android Apps</li>
+                            <li><span>Cross-Platform Development</span><br>Building Cross-Platform Apps With Flutter
+                            </li>
+                            <li><span>Web Development</span><br>Developing Web Apps Using HTML, CSS & JavaScript</li>
+                            <li><span>Wix Website Design</span><br>Designing Websites With wix.com</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>No Experience yet.</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Bagrut from Yeshivat AMIT Daisy Berman</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------services--------------- -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-google-play"></i>
+                    <h2>Android Development</h2>
+                    <p>Some text about Android Development here...</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Cross-platform Development</h2>
+                    <p>Some text about Cross-Platform Development here...</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Some text about Web Development here...</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-wix"></i>
+                    <h2>Wix Website Design</h2>
+                    <p>Some text about Website Design with Wix here...</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------portfolio--------------- -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="files/images/work-1.png" alt="First Work">
+                    <div class="layer">
+                        <h3>Space Shooter Game</h3>
+                        <p>2D Space Shooter Game using pygame</p>
+                        <a href="https://github.com/Segev031/Space-Shooter-Game"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="files/images/work-1.png" alt="Second Work">
+                    <div class="layer">
+                        <h3>Virtual Assistant</h3>
+                        <p>Virtual Assistant for 2022 using Python</p>
+                        <a href="https://github.com/Segev031/Virtual-Assistant"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="files/images/work-3.png" alt="Third Work">
+                    <div class="layer">
+                        <h3>Mango Bot</h3>
+                        <p>Mango telegram bot</p>
+                        <a href="https://github.com/Segev031/Mango-Bot"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="files/images/work-1.png" alt="Fourth Work">
+                    <div class="layer">
+                        <h3>Tic Tac Toe</h3>
+                        <p>Tic tac toe android app</p>
+                        <a href="https://github.com/Segev031/Tic-Tac-Toe"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="files/images/work-2.png" alt="Fifth Work">
+                    <div class="layer">
+                        <h3>QuizTime</h3>
+                        <p>Quiz Time android app</p>
+                        <a href="https://github.com/Segev031/QuizTime"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="files/images/work-3.png" alt="Sixth Work">
+                    <div class="layer">
+                        <h3>Magic Conch Shell</h3>
+                        <p>Magic Conch Shell app using Flutter</p>
+                        <a href="https://github.com/Segev031/Magic-Conch-Shell"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="files/images/work-1.png" alt="Seventh Work">
+                    <div class="layer">
+                        <h3>Sign-in and Registration Screens</h3>
+                        <p>Sign in and registration screens in Flutter (with Firebase Integration)</p>
+                        <a href="https://github.com/Segev031/Flutter-Sign-In-and-Registeration-Screens"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Segev031" class="btn">See more</a>
+        </div>
+    </section>
+    <!-- ---------------contact--------------- -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-details">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>segev031@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>053-3398063</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/+972533398063"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100013799207528"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/segev031/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="files/documents/my-cv.pdf" download class="btn contact-btn">Download CV</a>
+                </div>
+                <div class="contact-form">
+                    <form name="submit-to-google-sheets">
+                        <input type="text" name="Full Name" id="name" placeholder="Full Name" required>
+                        <span id="nameError"></span>
+                        <input type="text" name="Email" id="email" placeholder="Email" required>
+                        <span id="emailError"></span>
+                        <textarea name="Message" id="message" rows="10" placeholder="Message" required></textarea>
+                        <span id="messageError"></span>
+                        <br>
+                        <button type="submit" class="btn contact-btn">Submit</button>
+                    </form>
+                    <span id="msg"><i class="fa-solid fa-check"></i>Message sent successfully</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------copyright--------------- -->
+    <section class="copyright">
+        <p>Copyright © Segev Tal. Thanks a lot to Easy Tutorials YouTube channel<a
+                href="https://www.youtube.com/c/EasyTutorialsVideo"><i class="fa-brands fa-youtube"></i></a></p>
+    </section>
+    <script src="src/main.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
